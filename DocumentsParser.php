@@ -23,7 +23,7 @@
 	 * @author 	Igor Timoshenkov
 	 * @started 20.03.2013
 	 * @version 0.2
-	 * @email 	i.timoshenkov@websitemowers.com
+	 * @email 	igor.timoshenkov@gmail.com
 	 *
 	 * OpenXML Standards - http://www.schemacentral.com/sc/ooxml/ss.html
 	 */
