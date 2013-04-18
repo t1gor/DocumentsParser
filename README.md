@@ -3,11 +3,6 @@ DOCx files parser
 
 Parses the docx file and returns an html string. Any help or critics appreciated.
 
-Reminder links:
---------------------
-* Comparing images - http://pastebin.com/wgeu2DqE
-* OpenXML Standards - http://www.schemacentral.com/sc/ooxml/ss.html
-
 Supported elements:
 --------------------
 * paragraphs (w:p),
@@ -52,3 +47,8 @@ Usage example:
 	file_put_contents('test_document.html', $html);
 ?>
 ```
+
+Reminder links:
+--------------------
+* Comparing images - http://pastebin.com/wgeu2DqE
+* OpenXML Standards - http://www.schemacentral.com/sc/ooxml/ss.html
