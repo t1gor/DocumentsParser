@@ -1,8 +1,12 @@
 DOCx files parser
 ========
 
-Parses the docx file and returns an html string.
-OpenXML Standards - http://www.schemacentral.com/sc/ooxml/ss.html
+Parses the docx file and returns an html string. Any help or critics appreciated.
+
+Reminder links:
+--------------------
+* Comparing images - http://pastebin.com/wgeu2DqE
+* OpenXML Standards - http://www.schemacentral.com/sc/ooxml/ss.html
 
 Supported elements:
 --------------------
