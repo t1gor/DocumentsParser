@@ -54,3 +54,4 @@ Reminder links:
 --------------------
 * Comparing images - http://pastebin.com/wgeu2DqE
 * OpenXML Standards - http://www.schemacentral.com/sc/ooxml/ss.html
+* Awesome XML editor - http://www.oxygenxml.com/download_oxygenxml_developer.html
