@@ -68,7 +68,7 @@
 				'style' => 'margin-top: 20px; margin-bottom: 5px; clear: both; font-size: 15px;',
 			)
 		);
-
+ 
 		/**
 		 * Init parser
 		 *
