@@ -618,7 +618,35 @@
 				}
 			}
 
+			// Epic images in shapes part goes here:
+
 			foreach ($xmlElement->xpath('w:pict') as $picture) {
+				// iterate through groups
+				foreach ($picture->xpath('v:group') as $group) {
+					// ... and sub groups
+					foreach ($group->xpath('v:group') as $subGroup) {
+						foreach ($subGroup->xpath('v:shape') as $shape) {
+							foreach ($subGroup->xpath('*/v:imagedata') as $imagedata) {
+								$imageId = (string) $imagedata->xpath('@r:id')[0];
+								$src = $this->resource_index[$imageId]['target'];
+								$src = $this->filesDestinationFolder.str_replace('media/', '', $src);
+								return "<img src='{$src}' ".$this->getAttributes('img')." />";
+							}
+						}
+					}
+
+					// but don't also forget about images
+					foreach ($group->xpath('v:shape') as $shape) {
+						foreach ($group->xpath('*/v:imagedata') as $imagedata) {
+							$imageId = (string) $imagedata->xpath('@r:id')[0];
+							$src = $this->resource_index[$imageId]['target'];
+							$src = $this->filesDestinationFolder.str_replace('media/', '', $src);
+							return "<img src='{$src}' ".$this->getAttributes('img')." />";
+						}
+					}
+				}
+
+				// but don't also forget about images
 				foreach ($picture->xpath('v:shape') as $shape) {
 					foreach ($picture->xpath('*/v:imagedata') as $imagedata) {
 						$imageId = (string) $imagedata->xpath('@r:id')[0];
