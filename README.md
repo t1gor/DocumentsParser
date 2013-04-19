@@ -14,6 +14,8 @@ Supported elements:
 
 TODO:
 --------------------
+* shapes support
+* table cell styles
 * add links filter
 * images optimization (remove extra equal images)
 * add i18n
